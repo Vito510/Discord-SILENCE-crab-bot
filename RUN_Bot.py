@@ -1,3 +1,4 @@
+#https://github.com/Vito510/Discord-SILENCE-crab-bot
 import discord
 import asyncio
 from discord.ext import commands
@@ -7,7 +8,7 @@ from discord.ext.commands import Bot
 imageFile = Image.open("src.png")
 font = ImageFont.truetype('arial.ttf', 90) 
 
-bot = commands.Bot(command_prefix='Useless')
+bot = commands.Bot(command_prefix='Useless') #it's actually useless, you don't need it.
 
 @bot.event
 async def on_ready():
@@ -29,7 +30,7 @@ async def on_message(message):
         await channel.send("",files=image)
         print("Silenced "+message.author.name)
 
-bot.run('NzA3OTYxMzQ4NTQ5NjQwMjQz.XrQaYg.2tlSDgZJLU_iTf-V_GkA4y7E8Tg')
+bot.run('')
 
 
 
