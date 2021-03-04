@@ -30,7 +30,7 @@ async def on_message(message):
         await channel.send("",files=image)
         print("Silenced "+message.author.name)
 
-bot.run('')
+bot.run('Your bot token here')
 
 
 
