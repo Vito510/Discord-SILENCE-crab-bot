@@ -5,7 +5,6 @@ from discord.ext import commands
 from PIL import Image, ImageFont, ImageDraw
 from discord.ext.commands import Bot
 
-imageFile = Image.open("src.png")
 font = ImageFont.truetype('arial.ttf', 90) 
 
 bot = commands.Bot(command_prefix='Useless')
@@ -17,6 +16,8 @@ async def on_ready():
 @bot.event
 async def on_message(message):
     if message.author != bot.user:
+        
+        imageFile = Image.open("src.png")
 
         imageEdit = ImageDraw.Draw(imageFile)       
         imageEdit.text((30,120), message.author.name, (255, 255, 255), font=font)       
