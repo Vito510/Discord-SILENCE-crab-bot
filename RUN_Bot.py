@@ -1,6 +1,5 @@
 #https://github.com/Vito510/Discord-SILENCE-crab-bot
 import discord
-import asyncio
 from discord.ext import commands
 from PIL import Image, ImageFont, ImageDraw
 from discord.ext.commands import Bot
